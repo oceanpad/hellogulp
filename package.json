@@ -1,0 +1,26 @@
+{
+  "name": "hellogulp",
+  "version": "0.0.0",
+  "description": "hellogulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oceanpad/hellogulp.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "haiyang zhao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oceanpad/hellogulp/issues"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-webserver": "^0.9.1"
+  }
+}
