@@ -2,6 +2,7 @@ var url = require('url');
 var fs = require('fs');
 var path = require('path');
  
+
 gulp = require('gulp');
 livereload = require('gulp-livereload');
 webserver = require('gulp-webserver');
@@ -46,6 +47,14 @@ gulp.task('webserver', function() {
         proxies: []
     }));
 });
- 
+
+ gulp.task('watchfiles', function() {
+   console.log("file changed");
+ }); 
+
+//files monitoring
+ gulp.task('watch', function() {
+   gulp.watch('./gulpfile.js', ['watchfiles']);
+ }); 
 // 默认任务
 gulp.task('default', ['webserver']);
