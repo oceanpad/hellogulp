@@ -1,6 +1,6 @@
 A Chart.js show case. The local server is created by gulp.
 
-# Requires
+## Requires
 ### node
 
 * Linux
@@ -8,21 +8,21 @@ A Chart.js show case. The local server is created by gulp.
 ```bash
 $ sudo apt-get install node
 ```
-* Other Os 
+* Other os 
 
 [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
 
-# Install Dependencies
+## Install Dependencies
 ```bash
 $ sudo npm isntall 
 ```
 
-# Run 
+## Run 
 ```bash
-gulp
+$ gulp
 ```
 
-# show sample chart html
+## show sample chart html
 click sample folder, click one html, will show chart in the html
 
