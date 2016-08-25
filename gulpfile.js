@@ -9,14 +9,14 @@ webserver = require('gulp-webserver');
  
 //web服务器
 gulp.task('webserver', function() {
-    gulp.src('./www') // 服务器目录（./代表根目录）
+    gulp.src('.') // 服务器目录（./代表根目录）
     .pipe(webserver({ // 运行gulp-webserver
         port: 8000, //端口，默认8000
         livereload: true, // 启用LiveReload
         open: true, // 服务器启动时自动打开网页
         directoryListing: {
             enable: true,
-            path: './www'
+            path: '.'
         },
         middleware: function(req, res, next) {
             //mock local data
@@ -57,4 +57,4 @@ gulp.task('webserver', function() {
    gulp.watch('./gulpfile.js', ['watchfiles']);
  }); 
 // 默认任务
-gulp.task('default', ['webserver']);
+gulp.task('default', ['webserver', 'watch']);
